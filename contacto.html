@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restaurante Palmeras</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+  <img src="./img/logo.png" alt="Logo Palmeras" class="logo-img">
+  <div class="logo">Palmeras</div>
+
+  <!-- BOTÓN HAMBURGUESA (solo móvil) -->
+  <div class="hamburger" onclick="toggleMenu()">
+    ☰
+  </div>
+
+  <nav id="nav">
+    <a href="./index.html">Inicio</a>
+    <a href="./carta.html">Carta</a>
+    <a href="./historia.html">Historia</a>
+    <a href="./contacto.html" class="active">Reservas</a>
+  </nav>
+</header>
+
+<section class="section green" style="background:linear-gradient(rgba(255,255,255,.4),rgba(255,255,255,.4)),
+             url('./img/palmeras.png') center/cover no-repeat;">
+  <div class="hero-card">
+    <h2>Contacto</h2>
+    <br>
+
+  <div class="contact">
+  <span>
+    📍 
+    <a href="https://maps.app.goo.gl/L88Z41kjgu3RQc4r7"
+       target="_blank" rel="noopener">
+      Avinguda de Paiporta, 84, 46910 Benetússer, Valencia
+    </a>
+  </span>
+
+  <span>
+    📞 
+    <a href="tel:+34963757705">
+      963 75 77 05
+    </a>
+  </span>
+
+  <span>
+    ✉️ 
+    <a href="mailto: laspalmerasbenetuser@gmail.com">
+       laspalmerasbenetuser@gmail.com
+    </a>
+  </span>
+</div>
+
+
+
+    <br><br>
+
+    <h3>🕒 Horario</h3>
+    <div class="horario">
+      <p><strong>Miércoles:</strong> 8:00 – 18:00</p>
+      <p><strong>Jueves:</strong> 8:00 – 18:00</p>
+      <p><strong>Viernes:</strong> 8:00 – 1:00</p>
+      <p><strong>Sábado:</strong> 8:00 – 1:00</p>
+      <p><strong>Domingo:</strong> Cerrado</p>
+      <p><strong>Lunes:</strong> Cerrado</p>
+      <p><strong>Martes:</strong> 8:00 – 18:00</p>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">© 2025 Restaurante Palmeras |
+  <a href="./contacto.html" class="footer-link">Contacto</a>
+   <br>
+   <span>
+    📍 
+    <a href="https://maps.app.goo.gl/L88Z41kjgu3RQc4r7"
+       target="_blank" rel="noopener" class="footer-link">
+      Avinguda de Paiporta, 84, 46910 Benetússer, Valencia
+    </a>
+  </span>
+  <span> | </span>
+    <span>
+    📞 
+    <a href="tel:+34963757705" class="footer-link">
+      963 75 77 05
+    </a>
+  </span>
+    <span> | </span>
+    <span>
+    ✉️ 
+    <a href="mailto:reservas@palmeras.com" class="footer-link">
+      reservas@palmeras.com
+    </a>
+  </span>
+      
+</footer>
+<script>
+function toggleMenu(){
+  document.getElementById("nav").classList.toggle("active");
+}
+</script>
+</body>
+</html>

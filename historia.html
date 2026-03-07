@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restaurante Palmeras</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+  <img src="./img/logo.png" alt="Logo Palmeras" class="logo-img">
+  <div class="logo">Palmeras</div>
+
+  <!-- BOTÓN HAMBURGUESA (solo móvil) -->
+  <div class="hamburger" onclick="toggleMenu()">
+    ☰
+  </div>
+
+  <nav id="nav">
+    <a href="./index.html">Inicio</a>
+    <a href="./carta.html">Carta</a>
+    <a href="./historia.html" class="active">Historia</a>
+    <a href="./contacto.html">Reservas</a>
+  </nav>
+</header>
+
+<section class="section green" style="background:linear-gradient(rgba(255,255,255,.4),rgba(255,255,255,.4)),
+             url('./img/palmeras.png') center/cover no-repeat;">
+  <div class="history">
+      <div class="hero-card">
+    <h2>Nuestra Historia</h2>
+    <p>
+      Así comenzaría nuestra historia…
+      Un 4 de agosto de 1983, una familia decidió dar un paso valiente y abrir las puertas de un pequeño restaurante que nacería del esfuerzo, la ilusión y muchas horas de trabajo. 
+      Al frente estaba Antonio Inarejos, quien desde el primer día ocupó su lugar detrás de la barra, atendiendo a cada cliente con cercanía, conversación y una sonrisa que pronto se volvió inconfundible.
+      A su lado, su mujer, Elia Verdejo—peluquera de profesión y sin  experiencia alguna ,aceptó el mayor de los retos: ponerse al frente de la cocina. 
+      <br>
+      <br>
+      Cada plato llevaba algo más que ingredientes: llevaba historia, cariño y respeto por la tradición. 
+      <br>
+      <br>
+      Desde el primer día, el lugar se convirtió en un punto de encuentro para vecinos, amigos y viajeros que buscaban sabores auténticos y un trato cercano.
+      <br>
+      <br>
+      Con el paso del tiempo, sus hijos se unieron al negocio familiar, creciendo entre mesas, aromas y conversaciones. Aprendieron el valor del trabajo, del compromiso y del trato cercano con los clientes, asimilando desde pequeños la esencia del restaurante y el sacrificio que conllevaba mantenerlo vivo.
+      Los años trajeron cambios, aprendizajes y nuevos retos, pero también la satisfacción de ver cómo aquel proyecto familiar se consolidaba. 
+      Tras la jubilación de Antonio y  Elia, fueron sus hijos quienes tomaron el relevo, asumiendo con orgullo y responsabilidad la gestión del restaurante, manteniendo vivas las tradiciones y aportando nuevas ideas sin perder la esencia con la que todo comenzó.
+      <br>
+      <br>
+      Hoy, décadas después de aquel 4 de agosto de 1983, el restaurante sigue siendo un símbolo de constancia, unión y amor por la buena cocina. Cada servicio es un homenaje a quienes lo iniciaron y a todos los que, plato a plato, han formado parte de su historia.
+      Porque más que un restaurante, es un legado familiar que sigue vivo en cada sabor.
+    </p>
+    <img src="./img/premio.jpeg" alt="Premio" class="premio-img">
+  </div>
+</section>
+
+<footer class="footer">© 2025 Restaurante Palmeras |
+  <a href="./contacto.html" class="footer-link">Contacto</a>
+   <br>
+   <span>
+    📍 
+    <a href="https://maps.app.goo.gl/L88Z41kjgu3RQc4r7"
+       target="_blank" rel="noopener" class="footer-link">
+      Avinguda de Paiporta, 84, 46910 Benetússer, Valencia
+    </a>
+  </span>
+  <span> | </span>
+    <span>
+    📞 
+    <a href="tel:+34963757705" class="footer-link">
+      963 75 77 05
+    </a>
+  </span>
+    <span> | </span>
+    <span>
+    ✉️ 
+    <a href="mailto: laspalmerasbenetuser@gmail.com" class="footer-link">
+       laspalmerasbenetuser@gmail.com
+    </a>
+  </span>
+      
+</footer>
+<script>
+function toggleMenu(){
+  document.getElementById("nav").classList.toggle("active");
+}
+</script>
+</body>
+</html>

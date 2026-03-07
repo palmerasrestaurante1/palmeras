@@ -1,0 +1,452 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Montserrat', sans-serif;
+}
+
+.premio-img{
+  height: 250px;
+  width: 300px;
+}
+
+.logo-img{
+  position: absolute;
+  top: 0px;
+  left: 60px;
+  height: 90px;
+  z-index: 10;
+}
+
+.logo-img-mobile {
+  display: block;
+  margin: 0 auto 20px auto; /* centrado y con espacio debajo */
+  width: 60%;   /* tamaño proporcional al contenedor */
+  max-width: 150px; /* no se haga gigante en móviles grandes */
+  height: auto;
+}
+
+
+.footer-link{
+  color:white;
+}
+
+html, body{
+  height:100%;
+}
+
+body{
+  background:#f2f8f2;
+  color:#2e3d2e;
+  display:flex;
+  flex-direction:column;
+}
+
+/* MOBILE ENTRY */
+.mobile-entry{
+  display:none;
+  height:100vh;
+  background:linear-gradient(180deg,#dff2df,#bfe6bf);
+  align-items:center;
+  justify-content:center;
+}
+
+.mobile-box{
+  background:white;
+  padding:50px 40px;
+  border-radius:20px;
+  box-shadow:0 20px 40px rgba(0,0,0,.15);
+  text-align:center;
+}
+
+.mobile-box h1{
+  font-size:2.5rem;
+  color: #bfe6bf; /* se mantiene del primer CSS */
+  visibility: hidden; /* se mantiene del primer CSS */
+}
+
+.mobile-box p{
+  margin-bottom:30px;
+}
+
+.mobile-box a{
+  display:block;
+  margin:12px 0;
+  padding:14px;
+  border-radius:30px;
+  background:#6bcf95;
+  color:white;
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* HEADER */
+.header{
+  display:flex;
+  justify-content:space-between;
+  padding:25px 60px;
+  background:#e6f5e6;
+  position: relative;
+}
+
+.logo{
+  font-size:2rem;
+  font-weight:700;
+  color:#e6f5e6;
+}
+
+nav a{
+  margin-left:10px;
+  text-decoration:none;
+  color:#2e3d2e;
+  font-weight:500;
+}
+
+/* HERO */
+.hero{
+  height:80vh;
+  background:linear-gradient(rgba(255,255,255,.4),rgba(255,255,255,.4)),
+             url('./img/palmeras.png') center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.hero-card{
+  background:white;
+  padding:60px;
+  border-radius:25px;
+  box-shadow:0 30px 60px rgba(0,0,0,.2);
+  text-align:center;
+}
+
+.hero-card h1{
+  font-size:3rem;
+  color:#4fa66f;
+}
+
+/* SECTIONS */
+.section{
+  padding:100px 18%;
+  text-align:center;
+  flex:1;
+  padding-top: 60px;
+}
+
+.section.green{
+  background:#dff2df;
+}
+
+.section.light{
+  background:#f7fbf7;
+}
+
+.section h2{
+  font-size:2.4rem;
+  margin-bottom:40px;
+  color:#4fa66f;
+}
+
+/* ===================== */
+/* CARTA / MENU IMÁGENES */
+/* ===================== */
+.menu{
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap:24px;
+  max-width:900px;
+  margin:0 auto;
+}
+
+.menu img{
+  display:block;
+  width:85%;          
+  height:auto;        
+  margin:0 auto;      
+  border-radius:18px;
+  box-shadow:0 12px 24px rgba(0,0,0,.15);
+  transition:transform .25s ease, box-shadow .25s ease;
+  cursor:pointer;
+}
+
+.menu img:hover{
+  transform:scale(1.02);
+  box-shadow:0 20px 40px rgba(0,0,0,.22);
+}
+
+/* ===================== */
+/* CARTA / MENU-INDEX ESTILO HERO NATURAL */
+/* ===================== */
+.menu-index{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:30px;
+  max-width:1000px;
+  margin:0 auto;
+}
+
+.menu-index .menu-item{
+  background:rgba(255,255,255,0.95);
+  padding:45px 30px;
+  border-radius:24px;
+  box-shadow:0 20px 40px rgba(0,0,0,.12);
+  font-size:1.15rem;
+  font-weight:500;
+  color:#2e3d2e;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  line-height:1.6;
+  transition:transform .35s ease, box-shadow .35s ease;
+  position:relative;
+  overflow:hidden;
+}
+
+.menu-index .menu-item::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(135deg, rgba(111,207,151,.18), transparent 60%);
+  opacity:0;
+  transition:opacity .35s ease;
+}
+
+.menu-index .menu-item:hover{
+  transform:translateY(-6px);
+  box-shadow:0 30px 60px rgba(0,0,0,.18);
+}
+
+.menu-index .menu-item:hover::before{
+  opacity:1;
+}
+
+/* HISTORY */
+.history{
+  max-width:700px;
+  margin:auto;
+  font-size:1.1rem;
+  line-height:1.8;
+}
+
+.history p {
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+  line-height: 1.7;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+/* CONTACT */
+.contact{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+  font-weight:500;
+}
+
+.contact a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact a:hover {
+  color: #4fa66f;
+  text-decoration: underline;
+}
+
+/* FOOTER */
+.footer{
+  background:#4fa66f;
+  color:white;
+  text-align:center;
+  padding:25px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .desktop{display:none}
+  .mobile-entry{display:flex}
+}
+
+/* 📱 MÓVIL CARTA / MENU-INDEX */
+@media (max-width:768px){
+  .menu{
+    grid-template-columns:1fr;
+    gap:20px;
+  }
+
+  .menu img{
+    width:95%;        
+  }
+
+  .menu-index{
+    grid-template-columns:1fr;
+  }
+
+  .menu-index .menu-item{
+    padding:35px 25px;
+    font-size:1.1rem;
+  }
+
+  .section{
+    padding:50px 10%;
+  }
+}
+
+@media (max-width: 900px) {
+  .mobile-entry {
+    background:
+      linear-gradient(rgba(255,255,255,.4),rgba(255,255,255,.4)),
+             url('./img/palmeras.png') center/cover no-repeat;
+  }
+
+  .mobile-box {
+    background: rgba(255,255,255,0.92);
+  }
+}
+
+/* INTERACTIVIDAD GENERAL */
+a {
+  transition: all 0.3s ease;
+}
+
+/* NAV */
+nav a:hover {
+  color: #4fa66f;
+  transform: translateY(-2px);
+}
+
+nav a.active {
+  color: #4fa66f;
+  font-weight: 700;
+}
+
+/* BOTONES */
+.mobile-box a:hover,
+.hero-btn:hover {
+  background: #4fa66f;
+  transform: scale(1.05);
+}
+
+/* HERO CARD */
+.hero-card {
+  transition: transform .4s ease;
+}
+
+.hero-card:hover {
+  transform: scale(1.03);
+}
+
+/* CONTACTO */
+.contact span:hover {
+  color: #4fa66f;
+  transform: translateX(5px);
+}
+
+.menu-action{
+  margin-bottom:40px;
+  text-align:center;
+}
+
+.menu-btn{
+  display:inline-block;
+  padding:16px 38px;
+  border-radius:40px;
+  background:#6bcf95;
+  color:white;
+  text-decoration:none;
+  font-weight:600;
+  font-size:1rem;
+  box-shadow:0 15px 30px rgba(0,0,0,.15);
+  transition:all .35s ease;
+}
+
+.menu-btn:hover{
+  background:#4fa66f;
+  transform:translateY(-4px);
+  box-shadow:0 25px 45px rgba(0,0,0,.22);
+}
+
+/* ===================== */
+/* GALERÍA DE PLATOS */
+/* ===================== */
+.gallery{
+  column-count:3;
+  column-gap:24px;
+  max-width:1200px;
+  margin:0 auto;
+}
+
+.gallery img{
+  width:100%;
+  margin-bottom:24px;
+  border-radius:16px;
+  box-shadow:0 12px 25px rgba(0,0,0,.15);
+  break-inside:avoid;
+  transition:transform .35s ease, box-shadow .35s ease;
+}
+
+.gallery img:hover{
+  transform:scale(1.02);
+  box-shadow:0 25px 45px rgba(0,0,0,.25);
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width:900px){
+  .gallery{
+    column-count:2;
+  }
+}
+
+@media (max-width:600px){
+  .gallery{
+    column-count:1;
+  }
+}
+
+/* HORARIO (solo del segundo CSS) */
+.horario p {
+  margin: 6px 0;
+  transition: color 0.3s ease;
+}
+
+.horario p:hover {
+  color: #6fbf73; /* verde claro */
+}
+
+/* HAMBURGUESA */
+.hamburger{
+  display:none;
+  font-size:28px;
+  cursor:pointer;
+}
+
+/* MOBILE NAV */
+@media (max-width:768px){
+
+  .hamburger{
+    display:block;
+  }
+
+  nav{
+    display:none;
+    position:absolute;
+    top:100%;
+    right:0;
+    background:#e6f5e6;
+    width:100%;
+    text-align:center;
+    padding:20px 0;
+  }
+
+  nav a{
+    display:block;
+    margin:15px 0;
+  }
+
+  nav.active{
+    display:block;
+  }
+}
